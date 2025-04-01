@@ -1,4 +1,11 @@
 [
-    "hen","tiger","han","fan"
-    ]
-    
+    { "category": "Electronics", "productName": "Laptop", "price": "1000" },
+    { "category": "Clothing", "productName": "T-Shirt", "price": "20" },
+    { "category": "Grocery", "productName": "Apple", "price": "2" },
+    { "category": "Electronics", "productName": "Laptop", "price": "1000" },
+    { "category": "Clothing", "productName": "T-Shirt", "price": "20" },
+    { "category": "Grocery", "productName": "Apple", "price": "2" },
+    { "category": "Electronics", "productName": "Laptop", "price": "1000" },
+    { "category": "Clothing", "productName": "T-Shirt", "price": "20" },
+    { "category": "Grocery", "productName": "Apple", "price": "2" }
+]

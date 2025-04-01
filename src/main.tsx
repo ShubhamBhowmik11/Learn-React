@@ -6,6 +6,6 @@ import Router from './Router/LearnRouter.tsx'
 
 createRoot(document.getElementById('root')!).render(
  
-    <Router />
+    <App/>
   
 )
