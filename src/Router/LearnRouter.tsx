@@ -1,19 +1,22 @@
-import { createBrowserRouter, Link, RouterProvider } from "react-router-dom";
+import { BrowserRouter, createBrowserRouter, Link, Route, RouterProvider, Routes } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import Login from "./Login";
-
-const router = createBrowserRouter([
-  { path: "/Home", element: <Home></Home> },
-  { path: "/Login", element: <Login></Login> },
-  { path: "/About", element: <About></About>},
-]);
+import New from "./New";
 const Router = () => {
 
 	return (
     <>
-    
-    <RouterProvider router={router}></RouterProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<New />} />
+        <Route path="/Home" element={<Home />} />
+          <Route path="/Login" element={<Login /> } />
+          <Route path="/About" element={<About />} />
+      
+      </Routes>
+    </BrowserRouter>
+  
     </>
   );
   
