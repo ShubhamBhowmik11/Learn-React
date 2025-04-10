@@ -6,7 +6,7 @@ const DynamicRouting = ({num}) => {
   return (
     <div>
  
-      <h1>{num} + shubham </h1>
+      <h1>{id} + shubham </h1>
     </div>
   )
 }
