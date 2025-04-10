@@ -4,16 +4,25 @@ import viteLogo from '/vite.svg'
 import  Passing from './Passing.tsx'
 import Wrapper from './Wrapper.tsx'
 import UserDashboard from './UserDashboard.tsx'
-import Filter from './Classssign2.tsx'
+import Filter from './Router/DynamicRouting.tsx'
 import {BrowserRouter, Link, Route, Routes} from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  function Change(e){
+    setCount(e.target.value);
+  }
 
   return (
     <>
-    <Filter className="   bg-blue-100"/>
-    <h1 className="bg-blue-100">shubham</h1>
+    <BrowserRouter>
+    <input type="text" onChange={Change}/>
+    <Routes>
+      <Route path="details/:id" element={<Filter/>}>shubham</Route>
+    </Routes>
+    </BrowserRouter>
+    <Filter num={count}></Filter>
+
     </>
   )
 }
